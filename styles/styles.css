@@ -2,3 +2,7 @@ a {
     font-size: 64px;
     font-style: italic;
 }
+
+a:visited {
+    color: blue;
+}
