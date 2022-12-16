@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/SurveyForm/styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="headerText">
+        <h1 id="title">Survey Form Project</h1>
+        <p id="description">Este es mi proyecto en español para Diseño Web Responsivo</p>
+        </div>
+    </header>
+    <section>
+    <form action="/SurveyForm/fromAction.txt" id="survey-form">
+        <div id="form-group">    
+            <label for="name" id="name-label">
+                <p>Nombre Completo</p>
+            </label>
+            <input type="text" name="name" id="name" placeholder="Ej.: Steve Jobs" value="" required>
+        </div>
+        <div id="form-group">    
+            <label for="email" id="email-label">
+                <p>Email</p></label>
+                <input type="email" id="email" placeholder="Ponga su Email" value="" required>
+        </div>
+        <div id="form-group">  
+            <label for="number" id="number-label">
+            <p>Edad</p></label>
+            <input type="number" id="number" min="16" max="65" placeholder="Edad" value="#" required>
+        </div>
+        <div id="form-group">
+            <p>¿Qué tan interesado está en aprender programación?</p>
+            <select name="dropdown" id="dropdown" required>
+                <option disabled selected value="who">Seleccione una respuesta</option>
+                <option value="nothing">Nada interesado</option>
+                <option value="something">Poco interesado</option>
+                <option value="meh">Algo interesado</option>
+                <option value="soo">Bastante interesado</option>
+                <option value="very">Muy interesado</option>
+            </select>
+        </div>
+        <div id="form-group">
+            <p>¿Qué rama de la programación te interesa?</p>
+            <ul>
+                <li style="list-style:none;">
+                    <label for=""></label>
+                    <input name="development" value="front-end" type="radio" class=" input-radio" checked>Front-End
+                </li>
+                <li style="list-style:none;">
+                    <label for=""></label>
+                    <input name="development" value="back-end" type="radio" class=" input-radio">Back-End
+                </li>
+                <li style="list-style:none;">
+                    <label for=""></label>
+                    <input name="development" value="fullstack" type="radio" class=" input-radio">Fullstack
+                </li>
+                <li style="list-style:none;">
+                    <label for=""></label>
+                    <input name="development" value="software" type="radio" class=" input-radio">Software Developer
+                </li>
+                <li style="list-style:none;">
+                    <label for=""></label>
+                    <input name="development" value="software" type="radio" class=" input-radio">Desarrollo de Videojuegos
+                </li>
+            </ul>
+        </div>
+        <div id="form-group">
+            <p>¿Sabes alguna de estas tecnologías?</p>
+            <label for="code">
+                <input value="html5" type="checkbox" name="wich-code" id="">HTML5
+            </label>
+            <label for="code">
+                <input value="css3" type="checkbox" name="wich-code" id="">CSS3
+            </label>
+            <label for="code">
+                <input value="javascript" type="checkbox" name="wich-code" id="">JavaScript
+            </label>
+            <label for="code">
+                <input value="reactjs" type="checkbox" name="wich-code" id="">React.js
+            </label>
+            <label for="code">
+                <input value="jquery" type="checkbox" name="wich-code" id="">JQuery
+            </label>
+        </div>
+        <div id="form-group">
+            <label for="code">
+                <p>Agrega un comentario</p>
+                <textarea name="coments" id="" cols="30" rows="10"></textarea>
+            </label>
+        </div>
+        <br>
+        <div id="form-group">
+            <label for="code">
+                <input type="submit" id="submit">
+            </label>
+        </div>
+    </form>
+    </section>
+</body>
+</html>
