@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(79, 142, 121);
+    background-color: #366161;
     width: 100%;
 }
 
@@ -19,8 +20,9 @@ header {
     width: 60%;
     border-radius: 10px;
     padding: 3px;
-    background: linear-gradient(135deg, red, blue, rgb(255, 0, 204), blue, red);
+    background: linear-gradient(135deg, #366161, #ffd166);
     margin-bottom: 15px;
+    box-shadow: 7px 3px 5px black;
 }
 
 .headerText {
@@ -42,7 +44,8 @@ section {
     width: 60%;
     border-radius: 10px;
     padding: 3px;
-    background: linear-gradient(45deg, red, blue, rgb(255, 0, 204), blue, red);
+    background: linear-gradient(135deg, #366161, #ffd166);
+    box-shadow: 5px 5px 5px black;
 }
 
 form {
@@ -51,9 +54,21 @@ form {
     padding: 20px;
 }
 
-#form-group {
+div#form-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+}
+
+form div {
+    padding: 10px;
+}
+
+p {
+    margin-bottom: 7px;
+}
+
+@media screen {
+    
 }
