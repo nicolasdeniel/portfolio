@@ -106,47 +106,6 @@ svg {
         width: 200px;
         height: 200px;
     }
-
-    i {
-        width: 200px;
-        height: 200px;
-    }
-
-    .fa-github {
-        background-color: #fff;
-        color: #000;
-        width: 60px;
-        height: 60px;
-    }
-    
-    .fa-whatsapp {
-        background-color: #19c321;
-        color: #FFF;
-        width: 60px;
-        height: 60px;
-    }
-    
-    .fa-instagram {
-        background: linear-gradient(to right bottom, #FECE44, #EA3C53, #CE3AA0);
-        color: #FFF;
-        width: 60px;
-        height: 60px;
-    }
-    
-    .fa-linkedin-in {
-        background-color: #0279BD;
-        color: #FFF;
-        width: 60px;
-        height: 60px;
-    }
-
-    .main {
-        gap: 3rem;
-    }
-
-    .main__scnd {
-        gap: 3rem;
-    }
 }
 
 .row3 {
