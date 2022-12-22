@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Inconsolata', monospace;
 }
 
 
@@ -36,7 +37,6 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #366161de;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -99,17 +99,53 @@ svg {
     }
 
     img {
-        width: 100px;
+        width: 200px;
     }
 
     .__prof-img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 
     i {
-        width: 20px;
-        height: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .fa-github {
+        background-color: #fff;
+        color: #000;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .fa-whatsapp {
+        background-color: #19c321;
+        color: #FFF;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .fa-instagram {
+        background: linear-gradient(to right bottom, #FECE44, #EA3C53, #CE3AA0);
+        color: #FFF;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .fa-linkedin-in {
+        background-color: #0279BD;
+        color: #FFF;
+        width: 60px;
+        height: 60px;
+    }
+
+    .main {
+        gap: 3rem;
+    }
+
+    .main__scnd {
+        gap: 3rem;
     }
 }
 
@@ -118,21 +154,60 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
-
-.rowLinks {
+.rowLinks:nth-child(1) {
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.rowLinks > h1 {
+    font-size: 2.4rem;
+    color: #FFF;
+}
+
+.rowLinks:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #305757;
+    width: 100%;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.rowLinks:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #305757;
+    width: 100%;
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 .fa-globe {
-    background-color: #366161de;
     color: #FFF;
     width: 40px;
     height: 40px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 
 a:visited {
