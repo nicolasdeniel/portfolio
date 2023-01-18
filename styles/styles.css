@@ -29,7 +29,7 @@ body {
 
 .row1>h1 {
     font-size: 1.5rem;
-    color: #dfc6c6;
+    color: #fff;
 }
 
 .main {
@@ -90,24 +90,6 @@ svg {
     border-radius: 50%;
 }
 
-@media screen and (max-width:740px) {
-
-    .container {
-        width: 100%;
-        margin: 0;
-        padding-left: 0;
-    }
-
-    img {
-        width: 200px;
-    }
-
-    .__prof-img {
-        width: 200px;
-        height: 200px;
-    }
-}
-
 .row3 {
     display: flex;
     flex-direction: column;
@@ -130,7 +112,7 @@ svg {
     color: #FFF;
 }
 
-.rowLinks:nth-child(2) {
+.rowLinks:nth-child(n+2) {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -143,17 +125,10 @@ svg {
     padding: 1rem;
 }
 
-.rowLinks:nth-child(3) {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    background-color: #305757;
-    width: 100%;
-    border-radius: 20px;
-    padding: 1rem;
+.fa-file-lines {
+    color: #FFF;
+    width: 40px;
+    height: 40px;
 }
 
 .fa-globe {
@@ -190,6 +165,10 @@ a:link {
         transform: scale(20) rotate(960deg) translate(-50%, -50%);
         opacity: 0;
     }
+}
+
+.background {
+    overflow: hidden;
 }
 
 .background li {
@@ -241,4 +220,24 @@ undefined
     animation-delay: 10s;
     left: 95vw;
     top: 4vh;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:740px) {
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .__prof-img {
+        width: 200px;
+        height: 200px;
+    }
 }
