@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Video Game Development Technical Documentation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="container" id="navbar">
+        <header>Videogame Develpment Topics</header>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Game_Engine" class="nav-link">Game Engine</a></li>
+                <li><a href="#Programming_Languages" class="nav-link">Programming Languages</a></li>
+                <li><a href="#Asset_Creation" class="nav-link">Asset Creation</a></li>
+                <li><a href="#Testing_and_Deployment" class="nav-link">Testing and Deployment</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Welcome to the world of video game development! This technical documentation will cover the various aspects of creating a video game, including game engines, programming languages, asset creation, and testing and deployment.</p>
+            <p>Before diving into the technical details, it's important to understand the basic concepts and processes involved in game development. A game engine is a software framework that provides the necessary tools and functionality for creating a game. Programming languages, such as C++ and C#, are used to write the code that runs the game. Assets, such as 3D models and textures, are created and implemented into the game to bring it to life.</p>
+            <p>Testing and deployment is the final step in the game development process, where the game is thoroughly tested and then released to the public. This technical documentation will provide in-depth information on each of these topics to help you get started in the exciting field of video game development.</p>
+        </section>
+            <section class="main-section" id="Game_Engine">
+            <header>Game Engine</header>
+            <p>A game engine is a software framework that provides the necessary tools and functionality for creating a game. Some popular game engines include Unity, Unreal Engine, and CryEngine.</p>
+            <p>When choosing a game engine, it's important to consider the type of game you want to create and the platforms you want to release on. Unity, for example, is a versatile engine that can be used for both 2D and 3D games and supports a wide range of platforms.</p>
+            <p>Unreal Engine is known for its powerful graphics capabilities and is often used for creating high-end, triple-A games. CryEngine, on the other hand, is primarily used for creating first-person shooter games.</p>
+            <p>Each engine has its own strengths and weaknesses, and it's important to research and experiment with different engines to find the one that best suits your needs.</p>
+            <div class="code">
+                <code>
+                    // Example code for creating a simple game using Unity
+                    using UnityEngine; <br>
+                    public class Example : MonoBehaviour { <br>
+                        public float speed = 10.0f;<br>
+                        void Update () {<br>
+                            transform.position += Vector3.right * speed * Time.deltaTime;<br>
+                        }<br>
+                    }
+                </code>
+            </div>
+        </section>
+        <section class="main-section" id="Programming_Languages">
+            <header>Programming Languages</header>
+            <p>In order to create a video game, a programmer must have knowledge in various programming languages. Some of the most commonly used programming languages in game development include C++, C#, and Java. </p>
+            <p>C++ is a high-performance language that is often used for creating the core engine of a game. C# is a popular language that is used with the Unity game engine, and is known for its ease of use and versatility. Java is also widely used in game development, particularly for Android games. </p>
+            <p>It's important to note that each language has its own set of strengths and weaknesses, and the choice of language will depend on the specific needs of the game and the platform it will be released on. </p>
+            <br>
+            <div class="code">
+                <code>
+                    // Example code for creating a simple game using C++
+                    #include <iostream> <br>
+                        int main() { <br>
+                            std::cout << "Hello, World!"; <br>
+                    return 0; <br>
+                } <br>
+            </code>
+            </div> <br>
+            <div class="code">
+                <code>
+                    // Example code for creating a simple game using C#
+                    using UnityEngine; <br>
+                    public class Example : MonoBehaviour { <br>
+                        public float speed = 10.0f; <br>
+                        void Update () { <br>
+                            transform.position += Vector3.right * speed * Time.deltaTime; <br>
+                        } <br>
+                    }
+                </code>
+            </div> <br>
+            <div class="code">
+                <code>
+                    // Example code for creating a simple game using Java
+                    public class HelloWorld { <br>
+                        public static void main(String[] args) { <br>
+                            System.out.println("Hello, World!"); <br>
+                        } <br>
+                    }
+                </code>
+            </div> <br>
+            <p>In addition, it is important to know how to use version control software such as Git, in order to keep track of changes made to the codebase and collaborate with others.</p>
+            <ul>
+                <li>Proper commenting of code is important for future references and for other developers to understand.</li>
+                <li>Debugging tools and techniques are also necessary for identifying and correcting errors in the code.</li>
+                <li>Object-oriented programming concepts and design patterns are essential for creating a clean and maintainable codebase.</li>
+            </ul>
+            </section>
+                <section class="main-section" id="Asset_Creation">
+                    <header>Asset Creation</header>
+                    <p>Creating high-quality assets is an important part of game development. These assets include 3D models, textures, and sound effects. </p>
+                    <p>3D modeling software such as Maya and Blender are used to create 3D models, which are then imported into the game engine. </p>
+                    <p>Texturing software such as Photoshop and Substance Painter are used to create textures, which are applied to the 3D models to give them a realistic look and feel. </p>
+                    <p>Sound design software such as Pro Tools and Audacity are used to create sound effects and music, which are then implemented into the game. </p>
+                    <p>It is important to consider the game's art style and technical limitations when creating assets.</p>
+                    <div class="code">
+                        <code>
+                            // Example code for importing a 3D model into Unity
+                            using UnityEngine; <br>
+                            public class Example : MonoBehaviour { <br>
+                                public GameObject model; <br>
+                                void Start() { <br>
+                                    Instantiate(model, transform.position, transform.rotation); <br>
+                                } <br>
+                            }
+                        </code>
+                    </div>
+                </section>
+                <section class="main-section " id="Testing_and_Deployment">
+                    <header>Testing and Deployment</header>
+                    <p>Once the game has been developed, it is important to thoroughly test it before releasing it to the public. This includes testing for bugs and compatibility on various platforms and devices. </p>
+                    <p>Testing should be done by both developers and external testers to ensure that the game is of high quality and ready for release. </p>
+                    <p>Once testing is complete, the game can be deployed to various platforms such as Steam, the App Store, and Google Play. </p>
+                    <p>It's important to consider the different requirements and guidelines for each platform when deploying the game. </p>
+                    <div class="code">
+                        <code>
+                            // Example code for deploying a game to Steam using Unity
+                            using UnityEngine; <br>
+                            public class Example : MonoBehaviour { <br>
+                                public string appId = "123456"; <br>
+                    void Start() { <br>
+                        Steam.SetAppID(appId); <br>
+                    } <br>
+                } <br>
+            </code>
+        </div>
+            <ul>
+            <li>Use of analytics and monitoring tools to track the game's performance and user engagement.</li>
+            <li>Consideration of localization and accessibility features.</li>
+            <li>Creating a marketing strategy to promote the game and attract players.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
