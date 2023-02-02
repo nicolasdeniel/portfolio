@@ -248,7 +248,7 @@ nav>ul {
         background: #52B69A;
     }
     #how-it-works>iframe {
-        max-width: 300px;
+        max-width: 315vh;
         width: 100%;
     }
 }
@@ -261,6 +261,7 @@ nav>ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background: #34A0A4;
 }
 
 .product {
