@@ -5,25 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9f004c4c7f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="website icon" type="png" href="img/logoTransparent.png">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
     <title>Nicolas Deniel</title>
 </head>
 <body>
-    <ul class="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <div class="container">
-        <div class="row1">
-            <h1>Página de Contacto de Nicolás Deniel</h1>
-        </div>
-        <div class="main">
+    <nav class="navbar menu">
+            <ul class="list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#abt-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+    </nav>
+    <section>
+        <!-- Home -->
+        <article class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Hello! My name is</div>
+                    <div class="text-2">Nicolas Deniel</div>
+                    <div class="text-3">And I am <span class="typing"></span></div>
+                    <!-- <a href="#">Contratarme</a> -->
+                </div>
+            </div>
+        </article>
+        <!-- About Me -->
+        <article id="abt-me">
+            <div class="ttl">
+                <h1 class="section-ttl">About Me</h1>
+            </div>
+            <div class="desc-main">    
+                <div class="prof-img">
+                    <img src="img/prof-img.jpg" alt="My Face">
+                </div>
+                <div class="desc">
+                    <p>I am a <span class="emp-txt">talented web developer</span>, with a passion for creating and improving online experiences. With my abilities in programming languages and web technologies, <span class="emp-txt">I can turn ideas into reality</span> and provide effective solutions to problems that arise in the digital world. <span class="emp-txt">My dedication and constant effort to improve my skills</span> make me a valuable member of the tech industry.</p>
+                    <br>
+                    <br>
+                    <p><span class="emp-txt">"Programming is not just a trade, it's an art."</span> - John Romero, co-founder of id Software and video game developer.</p>
+                </div>
+            </div>
+            <div class="cv">
+                <a href="cv.pdf" class="btn" download="cv.pdf">Download CV</a>
+            </div>
+        </article>
+        <!-- Projects -->
+        <article id="projects">
+            <h1 class="section-ttl">Projects</h1>
+            <div class="projects-grid">
+                <div class="rowLinks">
+                    <a href="ManuelBelgranoTibutePage/Index.html">
+                        <img src="img/tbt-page-cap.png" alt="Tribute Page Capture">
+                        Tribute Page
+                    </a>
+                </div>
+                <div class="rowLinks">
+                    <a href="SurveyForm/index.html">
+                        <img src="img/svf-page-cap.png" alt="Survey Form Capture">
+                        Survey Form
+                    </a>
+                </div>
+                <div class="rowLinks">
+                    <a href="TechnicalDocumentation/index.html">
+                        <img src="img/tdp-page-cap.png" alt="Technical Documentation Page Capture">
+                        Technical Documentation
+                    </a>
+                </div>
+                <div class="rowLinks">
+                    <a href="ProductLandingPage/index.html">
+                        <img src="img/plp-page-cap.png" alt="Product Landing Page Capture">
+                        Product Landing Page
+                    </a>
+                </div>
+            </div>
+        </article>
+        <!-- Skills -->
+        <article id="skills">
+            <h1 class="section-ttl">Skills</h1>
+            <div class="container">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png">
+                </div>
+                <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png">
+                </div>
+                <div class="card">
+                    <img src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-1.png">
+                </div>
+                <div class="card">
+                    <img src="https://www.brcline.com/wp-content/uploads/2016/01/bootstrap-logo.png">
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png">
+                </div>
+            </div>
+        </article>
+        <!-- Game-->
+        <article class="game" id="game">
+            <div class="max-width">
+                <h1 class="section-ttl">Game</h1>
+                <div class="jueguito">
+                    <div class="game_text">
+                        <h1>We must work together?</h3>
+                    </div>
+                    <div class="btn_game">
+                        <input type="button" onclick="whenSheSayYes()" id="btnYes" value="Yes" class="btn_game" />
+                        <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" class="btn_game"/>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Contact -->
+        <article class="main" id="contact">
+            <h1 class="section-ttl">Contact</h1>
             <div class="main__fst">
                 <a href="https://wa.me/+543415839708"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
@@ -34,46 +135,13 @@
                         <img src="img/logoTransparent.png" alt="profile" width="200">
                     </div>
                 </div>
-                <a href="https://www.instagram.com/nicolasmdnl/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:nicolasmdeniel@gmail.com"><i class="fa-solid fa-at"></i></a>
             </div>
             <div class="main__thrd">
                 <a href="https://www.linkedin.com/in/nicolas-deniel/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-        </div>
-        <div class="row3">
-            <div class="rowLinks">
-                <h1>Páginas de Interés</h1>
-            </div>
-            <div class="rowLinks">
-                <a href="https://nicolasdeniel.github.io/MyCurriculumVitae/">
-                    <i class="fa-regular fa-file-lines"></i>
-                    Mi Curriculum Vitae
-                </a>
-            </div>
-            <div class="rowLinks">
-                <a href="ManuelBelgranoTibutePage/Index.html">
-                    <i class="fa-solid fa-globe"></i>
-                    Página Tributo a Manuel Belgrano
-                </a>
-            </div>
-            <div class="rowLinks">
-                <a href="SurveyForm/index.html">
-                    <i class="fa-solid fa-globe"></i>
-                    Página de Formulario de Encuesta
-                </a>
-            </div>
-            <div class="rowLinks">
-                <a href="TechnicalDocumentation/index.html">
-                    <i class="fa-solid fa-globe"></i>
-                    Página de Documentación Técnica
-                </a>
-            </div>
-            <div class="rowLinks">
-                <a href="ProductLandingPage/index.html">
-                    <i class="fa-solid fa-globe"></i>
-                    Página de Presentación de producto
-                </a>
-            </div>
-    </div>
+        </article>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
