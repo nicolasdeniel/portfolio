@@ -14,6 +14,11 @@ var typed = new Typed(".typing-2", {
     loop: true
 });
 
+// Work In Progress
+
+function workInProgress(){
+    alert('Work in progress. Come back soon!! :D');
+}
 
 // Moving Button
 function whenSheSayYes(){
