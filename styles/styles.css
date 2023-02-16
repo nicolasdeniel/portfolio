@@ -69,7 +69,7 @@ ul:hover li a {
 }
 
 ul:hover li a:not(:hover) {
-    color: var(--color-black);
+    color: var(--color-gray);
     opacity: 0.8;
     filter: blur(1px);
     border: none;
@@ -434,6 +434,18 @@ a:link {
 
 @media screen and (max-width:740px) {
 
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .navbar>ul>li>a {
+        font-size: 1rem;
+    }
+
     section {
         width: 100%;
         margin: 0;
@@ -463,6 +475,11 @@ a:link {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .desc {
+        padding: 0;
+        text-align: justify;
     }
 
     .btn {
